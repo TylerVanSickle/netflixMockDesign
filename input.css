@@ -37,8 +37,104 @@
   
   nav{
     width: 100%;
-    height: 75px;
+    height: 8vh;
   }
   .buttonOne{
     border: 1px solid white;
+  }
+  .mainContent{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-weight: bold;
+  }
+  .mainContent input{
+    width: 60%;
+    height: 4rem;
+  }
+  .formSpan{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+  }
+  .formSpan button{
+    background-color: red;
+    width: 15%;
+  }
+  input::placeholder{
+    padding-left: 15px;
+  }
+  .mainContent h1{
+    font-size: 4rem;
+    letter-spacing: 0;
+  }
+  .mainContent p,
+  .mainContent h4{
+    font-size: 2rem;
+  }
+  @media screen and (max-width: 1150px){
+    .mainContent p,
+    .mainContent h4{
+      font-size: 1.5rem;
+    }
+    .mainContent h1{
+      font-size: 3rem;
+      letter-spacing: 0;
+    }
+  }
+
+  @media screen and (max-width: 880px) {
+    .mainContent h1{
+      font-size: 1.5rem;
+      letter-spacing: 0;
+    }
+    .mainContent p,
+    .mainContent h4{
+      font-size: 1rem;
+    }
+    input{
+      display: none;
+    }
+    .rightSide{
+      display: none;
+    }
+    .formSpan button{
+      background-color: red;
+      width: 50%;
+      height: 150%;
+      border-radius: 10px;
+    }
+    span.logo{
+      display: flex;
+      justify-content: center;
+    }
+
+  }
+
+  @media screen and (max-width: 880px) {
+
+    .removable{
+      display: none;
+    }
+    .logo img{
+      width: 30%;
+    }
+  }
+
+  @media screen and (max-width: 435px) {
+
+    .removable{
+      display: none;
+    }
+    .logo img{
+      width: 60%;
+    }
+    .removableTwo{
+      display: none;
+    }
   }
