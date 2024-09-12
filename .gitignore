@@ -1,0 +1,16 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+.pnp/
+.cache/
+
+# Optional npm files
+.npm
+package-lock.json
+yarn.lock
+# Optional environment variable files
+.env
