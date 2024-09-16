@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Netflix</title>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="output.css">
 </head>
 <body>
@@ -16,7 +17,7 @@
                         </span>
                     </span>
                     <span class="rightSide flex justify-end p-4" style="width: 100%">
-                        <button class="px-8 py-2 buttonOne text-white gap-2">English</button>
+                        <button class="px-8 py-2 buttonOne text-white gap-2" id="language">English</button>
                         <div class="p-1"></div>
                         <button class="text-white buttonTwo px-6 py-2 bg-red-600 rounded-md">Sign In</button>
                     </span>
@@ -25,11 +26,11 @@
             <section class="mainPage" style="height: 92vh;width: 100%;">
                 <div class="mainContent">
                         <h1>Unlimited movies<span class="removableTwo">, TV shows, and more.</span></h1>
-                        <p class="pb-5">Watch anywhere. Cancel anytime</p>
+                        <p class="pb-5">Watch anywhere. Cancel anytime.</p>
                     <h4 class="pb-5"><span class="removable">Ready to watch?  </span>Enter your email <span class="removableTwo">to create or restart your membership.</span></h4>
                     <span class="formSpan">
                         <input type="email" placeholder="Email Address">
-                        <button>Get started</button>
+                        <button id="signUpButton">Get started</button>
                     </span>
                 </div>
             </section>
